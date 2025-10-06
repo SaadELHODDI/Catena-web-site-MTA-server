@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Catena City Dev Team</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Meet the official developers behind Catena City RolePlay"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --bg:#0a0a0a;
+      --card:#111;
+      --accent:#007BFF;
+      --text:#ffffff;
+      --glow:0 0 8px var(--accent),0 0 20px var(--accent);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      background-image:url('assets/s1-background.png');
+      color:var(--text);
+      font-family:'Rajdhani',sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      min-height:100vh;
+      padding:3rem 1rem;
+    }
+    h1{
+      font-family:'Orbitron',sans-serif;
+      font-size:clamp(2rem,4vw,3rem);
+      color:var(--accent);
+      text-shadow:var(--glow);
+      margin-bottom:2.5rem;
+      letter-spacing:2px;
+    }
+    .team{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:2rem;
+      width:100%;
+      max-width:1200px;
+    }
+    .card{
+      background:var(--card);
+      border:2px solid var(--accent);
+      border-radius:15px;
+      padding:2rem;
+      position:relative;
+      overflow:hidden;
+      transition:transform .3s,box-shadow .3s;
+    }
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:var(--glow);
+    }
+    .card::before{
+      content:'';
+      position:absolute;
+      top:-50%;left:-50%;
+      width:200%;height:200%;
+      background:conic-gradient(var(--accent),transparent 30%);
+      animation:spin 6s linear infinite;
+      opacity:.06;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .avatar{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      border:3px solid var(--accent);
+      margin:0 auto 1rem;
+      display:block;
+      object-fit:cover;
+      position:relative;
+    }
+    .card h2{
+      font-family:'Orbitron',sans-serif;
+      font-size:1.25rem;
+      text-align:center;
+      margin-bottom:.25rem;
+    }
+    .role{
+      text-align:center;
+      color:var(--accent);
+      margin-bottom:1.2rem;
+      font-size:1rem;
+    }
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      font-size:1.4rem;
+    }
+    .socials a{
+      color:var(--text);
+      transition:color .3s,transform .3s;
+    }
+    .socials a:hover{
+      color:var(--accent);
+      transform:scale(1.2);
+    }
+    footer{
+      margin-top:auto;
+      padding:2rem;
+      font-size:.9rem;
+      opacity:.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>about the Dev Team</h1>
+
+  <section class="team">
+    <!-- Card 1 -->
+    <div class="card">
+      <img class="avatar" src="assets/cfec40a2e9ee2408ad51aad2ffa14b2b.png" alt="smodz">
+      <h2>SMODZ</h2>
+      <div class="role">designer/Web developer</div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://discordapp.com/users/1268309815268999302" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+        <div class="card">
+      <img class="avatar" src="assets/93bd6901855c0f78108dace5c54ad3e4.png" alt="KhaL1D">
+      <h2>Flash Draga</h2>
+      <div class="role">MTA developer</div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+           <div class="card">
+      <img class="avatar" src="assets/d2dabbf499b83eccb760e30ec3f5b202.png" alt="KhaL1D">
+      <h2>Souhail</h2>
+      <div class="role">MTA developer</div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+        <div class="card">
+      <img class="avatar" src="assets/b52db52921cacb87625c737492aaf309.png" alt="KhaL1D">
+      <h2>Colonel</h2>
+      <div class="role">Owner/Ds developer</div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+
+        <div class="card">
+      <img class="avatar" src="assets/" alt="KhaL1D">
+      <h2>JONINA</h2>
+      <div class="role"> Ds developer </div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+         <div class="card">
+      <img class="avatar" src="assets/9770f00d4bd3b52fb0bb8d3042eb8951.png" alt="KhaL1D">
+      <h2>Ja2son</h2>
+      <div class="role">server manager</div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+          <div class="card">
+      <img class="avatar" src="assets/9b7ab3d7cbfc6abbc12d2d4e787d4eeb.png" alt="KhaL1D">
+      <h2>Ghost</h2>
+      <div class="role"> server manager </div>
+      <div class="socials">
+        <a href="" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Catena City Dev Team © 2025 — Crafted for the ultimate RP experience
+  </footer>
+
+</body>
+</html>

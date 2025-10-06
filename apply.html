@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelist</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>  
+    <form action="submit.php" method="POST"></form>
+    <div class="wrapper">
+        <img src="assets/footer-right-pic.png" alt=""> 
+        <h2 class="text-right">Apply For</h2>
+        <div class="form-wrapper login">
+     
+                <div class="input-box">
+                    <span class="icon">
+                     <ion-icon name="user"></ion-icon>
+                    </span>
+                    <input type="text" name="reel_name" placeholder="Reel Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                       
+                    </span>
+                    <input type="number" name="reel_age" placeholder="Reel Age" required>
+                      
+                </div>
+                <div class="radio-group">
+  <input type="radio" id="women" name="gender" value="men" required>
+  <label for="men">Men</label>
+  
+  <input type="radio" id="men" name="gender" value="women">
+  <label for="women">Women</label>
+</div>
+                 <div class="input-box">
+                <div class="mydict">
+                    <div class="input-box">
+                    <span class="icon">
+                       
+                    </span>
+                    <input type="text" name="rp_name" placeholder="RP Name" required><br>
+                      
+                </div>
+                       <div class="input-box">
+                    <span class="icon">
+                       
+                    </span>
+                    <input type="number" name="rp_age" placeholder="RP Age" required>
+                      
+                </div>
+                    </div>
+                       <div class="input-box">
+                    <span class="icon">
+                       
+                    </span>
+                    <input type="text" name="id_ds" placeholder="Id discord" required>
+                      
+                </div>
+                    <div class="input-box">
+                    <span class="icon">
+                 
+                    </span>
+                <textarea name="rp_story" placeholder="RP story" required></textarea>
+                      
+                </div>
+            </div>
+                <button type="submit">Apply</button>
+                
+</div>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
